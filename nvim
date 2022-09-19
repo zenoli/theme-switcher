@@ -1,0 +1,4 @@
+#!/bin/bash
+NVIM_BINARY=/opt/nvim-linux64/bin/nvim
+PIPE_HASH=$(echo "$(pwd)_${RANDOM}" | base64)
+$NVIM_BINARY --listen $NVIM_PIPE_DIR/$PIPE_HASH.pipe "$@"
