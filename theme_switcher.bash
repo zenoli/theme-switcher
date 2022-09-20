@@ -22,12 +22,6 @@ ls $NVIM_PIPES | xargs -I {} sh -c "nvim --server $NVIM_PIPES/{} --remote-send '
 
 XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-"$HOME/.config"}
 
-AWESOME_HOME=$XDG_CONFIG_HOME/awesome
-KITTY_HOME=$XDG_CONFIG_HOME/kitty
-TMUX_HOME=$XDG_CONFIG_HOME/tmux
-ZSH_HOME=$XDG_CONFIG_HOME/zsh
-NVIM_HOME=$XDG_CONFIG_HOME/nvim
-
 configs=(awesome kitty tmux zsh nvim)
 
 for config in "${configs[@]}"; do
