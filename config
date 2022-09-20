@@ -1,0 +1,3 @@
+# vi: ft=conf
+NVIM_BINARY="/opt/nvim-linux64/bin/nvim"
+NVIM_PIPES="/tmp/nvim-pipes"
