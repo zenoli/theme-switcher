@@ -1,5 +1,5 @@
 #!/bin/bash
-PROJECT_ROOT=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+PROJECT_ROOT=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
 source $PROJECT_ROOT/config
 
 THEME=$1
