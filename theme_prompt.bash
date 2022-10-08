@@ -7,4 +7,4 @@ THEMES=(
     papercolor
 )
 
-$PROJECT_ROOT/theme_switcher.bash $(echo ${THEMES[@]} | tr ' ' '\n' | dmenu -p "Colorscheme: ")
+$PROJECT_ROOT/theme_switcher.bash $(echo ${THEMES[@]} | tr ' ' '\n' | dmenu -h 30 -p "Colorscheme: ")
