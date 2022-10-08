@@ -1,4 +1,5 @@
 #!/bin/bash
+# shellcheck disable=2086,2011,2128
 PROJECT_ROOT=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
 source $PROJECT_ROOT/config
 
