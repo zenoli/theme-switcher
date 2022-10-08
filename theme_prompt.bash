@@ -8,8 +8,9 @@ HEIGHT=$([[ -v 1 ]] && echo "-h $1")
 echo $1
 
 THEMES=(
-	onedark
 	gruvbox
+    kat
+    onedark
 	papercolor
 )
 
