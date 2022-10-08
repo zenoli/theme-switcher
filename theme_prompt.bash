@@ -15,4 +15,5 @@ THEMES=(
 )
 
 SELECTED_THEME=$(echo "${THEMES[@]}" | tr ' ' '\n' | dmenu $HEIGHT -p "Colorscheme: ")
-$PROJECT_ROOT/theme_switcher.bash ${SELECTED_THEME:-$DEFAULT_THEME}
+
+[[ -n $SELECTED_THEME ]] && $PROJECT_ROOT/theme_switcher.bash $SELECTED_THEME
