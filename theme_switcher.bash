@@ -15,7 +15,7 @@ echo $THEME > $CURRENT_THEME
 tmux source-file "$XDG_CONFIG_HOME/tmux/themes/$THEME.tmux"
 
 # Update kitty theme
-kitty +kitten themes --reload-in=all $THEME
+kitty +kitten themes --reload-in=all --config-file-name=theme-loader.conf $THEME
 
 # Update nvim theme in all listening nvim servers
 [[ -d $NVIM_PIPES ]] || mkdir $NVIM_PIPES
