@@ -1,4 +1,0 @@
-# vi: ft=conf
-NVIM_BINARY="/usr/bin/nvim"
-NVIM_PIPES="/tmp/nvim-pipes"
-DEFAULT_THEME="onedark"

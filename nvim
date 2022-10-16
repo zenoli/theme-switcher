@@ -1,7 +1,0 @@
-#!/bin/bash
-PROJECT_ROOT=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
-source $PROJECT_ROOT/config
-
-PIPE_HASH=$(echo "$(pwd)_${RANDOM}" | base64)
-[[ -d $NVIM_PIPES ]] || mkdir $NVIM_PIPES
-$NVIM_BINARY --listen $NVIM_PIPES/$PIPE_HASH.pipe "$@"
